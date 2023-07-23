@@ -17,14 +17,15 @@ spring:
   resources:
     static-locations: file:./static,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/, classpath:/public/
   redis:
-    host: 127.0.0.1
-    port: 6379
-    database: 0
-#    cluster:
-#      nodes:
-#        - ubuntu:6380
-#        - ubuntu:6381
-#        - ubuntu:6382
+    #    host: 122.112.140.191
+    host: 42.193.139.55
+    open: true  # 是否开启redis缓存  true开启   false关闭
+    database: 10
+    password: 5XaMKsTZD5XNpTWC   # 密码（默认为空）
+    port: 6339
+    lettuce:
+      pool:
+        max-active: 1024
     timeout: 20s
     serializer: jdk # 设置fst时,redis key使用string序列化,value使用 fst序列化.
   r2dbc:

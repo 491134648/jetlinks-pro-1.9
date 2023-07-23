@@ -6,7 +6,7 @@
 
     <groupId>org.jetlinks.pro</groupId>
     <artifactId>jetlinks-parent</artifactId>
-    <version>1.9.0-SNAPSHOT</version>
+    <version>1.9.0</version>
     <packaging>pom</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -14,10 +14,10 @@
         <spring.boot.version>2.3.7.RELEASE</spring.boot.version>
         <java.version>1.8</java.version>
         <project.build.jdk>${java.version}</project.build.jdk>
-        <hsweb.framework.version>4.0.10-SNAPSHOT</hsweb.framework.version>
-        <easyorm.version>4.0.10-SNAPSHOT</easyorm.version>
+        <hsweb.framework.version>4.0.10</hsweb.framework.version>
+        <easyorm.version>4.0.10</easyorm.version>
         <hsweb.expands.version>3.0.2</hsweb.expands.version>
-        <jetlinks.version>1.1.6-SNAPSHOT</jetlinks.version>
+        <jetlinks.version>1.1.6</jetlinks.version>
         <r2dbc.version>Arabba-SR7</r2dbc.version>
         <netty.version>4.1.51.Final</netty.version>
         <elasticsearch.version>7.11.2</elasticsearch.version>

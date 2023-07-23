@@ -3,34 +3,38 @@ spring:
     static-locations: file:./index/, file:./static/,/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/, classpath:/public/
   redis:
 #    host: 122.112.140.191
-    host: 127.0.0.1
-    port: 6379
+    host: 42.193.139.55
+    open: true  # 是否开启redis缓存  true开启   false关闭
+    database: 10
+    password: 5XaMKsTZD5XNpTWC   # 密码（默认为空）
+    timeout: 6000ms  # 连接超时时长（毫秒）
+    port: 6339
     lettuce:
       pool:
         max-active: 1024
-    password: nonghai131
-    timeout: 20s
+#    password: nonghai131
+#    timeout: 20s
   r2dbc:
-#    url: r2dbc:postgresql://122.112.140.191:5432/ztiot
-#    username: ztiot
-#    password: nZnW6w3JC7Nf
+#    url: r2dbc:postgresql://localhost:5432/jetlinks
+#    username: postgres
+#    password: jetlinks
 
-    url: r2dbc:mysql://localhost:3306/jetlinks
-    username: root
-    password: root
+    url: r2dbc:mysql://cdb-h2b0hn5b.gz.tencentcdb.com:10148/jsiot
+    username: jsiot
+    password: jsiot123
 
 #    url: r2dbc:h2:file:///./data/h2db/jetlinks
 #    password: jetlinks
     pool:
       max-size: 32
 easyorm:
-  default-schema: jetlinks # 数据库默认的schema,修改数据库时这里也要修改
+  default-schema: jsiot # 数据库默认的schema,修改数据库时这里也要修改
   dialect: mysql #数据库方言
 #  default-schema: public # 数据库默认的schema,修改数据库时这里也要修改
 #  dialect: postgres #数据库方言
 elasticsearch:
   embedded:
-    enabled: true # 为true时使用内嵌的elasticsearch,不建议在生产环境中使用
+    enabled: false # 为true时使用内嵌的elasticsearch,不建议在生产环境中使用
     data-path: ./data/elasticsearch # 数据目录
     port: 9200
     host: 0.0.0.0

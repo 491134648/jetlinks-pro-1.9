@@ -31,7 +31,7 @@ import java.util.List;
         title = "物联网平台",
         description = "物联网平台接口文档",
         contact = @Contact(name = "admin"),
-        version = "1.9.0-SNAPSHOT"
+        version = "1.9.0"
     )
 )
 @SecuritySchemes(

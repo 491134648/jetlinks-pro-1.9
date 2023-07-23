@@ -10,7 +10,7 @@ public class Version {
 
     private final String edition = "pro";
 
-    private final String version = "1.9.0-SNAPSHOT";
+    private final String version = "1.9.0";
 
     public String getMode() {
         return RunMode.get();
