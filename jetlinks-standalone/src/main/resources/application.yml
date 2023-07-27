@@ -5,9 +5,9 @@ server:
     include-message: always
 spring:
   profiles:
-    active: dev,embedded
+    active: local
   application:
-    name: jetlinks-platform
+    name: unionlinks-platform
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: Asia/Shanghai
